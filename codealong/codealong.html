@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codealong</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app"></div>
+    <button onclick="addName(this.innerHTML)">NY TEKST YAY</button>
+    <button onclick="addName(this.innerHTML)">På</button>
+    <button onclick="addName(this.innerHTML)">deg</button>
+    <button onclick="addName(this.innerHTML)">da</button>
+    <button onclick="reset()">reset</button>
+    
+    <!-- Oppgavetekst:
+      <ol>
+            <li>Lag en div og 4 knapper. På hver knapp skal det stå ett ord </li>
+            <li>Når man trykker på knappen, skal ordet dukke opp i div’en.</li>
+            <li>Trykker man på den en gang til, eller en ny knapp, skal det også dukke opp i div’en, men med et mellomrom slik at det blir en setning.</li>
+            <li>Knappene skal kunne bruke den samme funksjonen. </li>
+            <li>En annen knapp skal kunne resette/tømme setningen og starte på nytt med blank div. </li>
+        </ol> -->
+    
+        <script>
+            function addName(name) {
+                let app = document.getElementById('app');
+                app.innerHTML += name + ' ';
+            }
+
+            function reset() {
+                let app = document.getElementById('app');
+                app.innerHTML = '';
+
+            }
+        </script>
+</body>
+</html>
